@@ -10,9 +10,14 @@ body {
   color: #666;
   border: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   -webkit-text-size-adjust: none;
   -ms-text-size-adjust: none;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 * {
   margin: 0;
@@ -75,6 +80,9 @@ body {
   -o-transform: scale(1);
   display: inline-block;
 }
+.site-main {
+  flex: 1;
+}
 /* base结束 */
 #m-warp .s-middle,
 #footer .footer,
@@ -108,13 +116,12 @@ body {
 }
 #header .logo1 img,
 #header .logo img {
-  width: 40%;
-  height: 36px;
-  padding-top: 56px;
-  padding-bottom: 48px;
+  height: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   float: left;
   clear: left;
-  margin-left: 23%;
+  margin-left: 17%;
 }
 #header .logo1 img {
   height: auto;
@@ -338,7 +345,7 @@ body {
   position: relative;
   z-index: 1000;
   font-size: 28px;
-  font-family: "微软雅黑";
+  font-family: '微软雅黑';
   color: #fff;
   margin: 10px 0;
   padding: 10px 0;
@@ -615,6 +622,7 @@ body {
   font-weight: 700;
   height: 30px;
   line-height: 30px;
+  color: #333;
 }
 #links ul li h2 a {
   font-size: 16px;
@@ -640,9 +648,9 @@ body {
   _width: 18%;
 }
 #links ul li.lm {
-  width: 27%;
+  width: 21%;
   margin-right: 4%;
-  _width: 26%;
+  _width: 23%;
   _margin-right: 2%;
 }
 #links ul li.ls {
@@ -696,7 +704,6 @@ body {
 #m-warp .s-middle .s-left {
   width: 18%;
   float: left;
-  background-color: none;
   margin-right: 2%;
 }
 #m-warp .s-middle .s-left ul {
@@ -721,7 +728,6 @@ body {
 }
 /*#m-warp .s-middle .s-left ul li.curLi{background-color:#f4f4f4; }*/
 #m-warp .s-middle .s-left ul li.curLi {
-  background-color: none;
 }
 /*#m-warp .s-middle .s-left ul li.curLi a{color:#0094da;}*/
 #m-warp .s-middle .s-left ul li.curLi a {
@@ -730,7 +736,6 @@ body {
 /*#m-warp .s-middle .s-left ul li.curLi a:hover{ color:#d00000;background-color:#f4f4f4; cursor:pointer;}*/
 #m-warp .s-middle .s-left ul li.curLi a:hover {
   color: #d00000;
-  background-color: none;
   cursor: pointer;
 }
 #m-warp .s-middle .s-left ul li.conLeftLast {
@@ -770,7 +775,7 @@ body {
   width: 80%;
   float: left;
   color: #5b5b5b;
-  min-height: 1060px;
+  /* min-height: 1060px; */
 }
 /*#m-warp .s-middle .s-right .rightTitle{ background:#f3f3f3; border-bottom:1px solid #bcbcbc;border-top:1px solid #fff;padding:6px 0 5px 12px;}*/
 #m-warp .s-middle .s-right .rightTitle {
@@ -1388,7 +1393,7 @@ body {
   line-height: 40px;
   _line-height: 40px;
   font-size: 11px;
-  font-family: "Microsoft Yahei", Tahoma, Geneva;
+  font-family: 'Microsoft Yahei', Tahoma, Geneva;
   font-weight: 500;
 }
 .news-picnews .mod_focus_show .mod_focus_title li h3 a {

@@ -16,135 +16,8 @@
 
 get_header();
 ?>
-		<div id="main" class="site-main">
-      <div id="top">
-        <div id="header">
-          <div class="hl">
-              <div class="logo">
-                <a href="http://www.leizhanchina.com"><img src="http://www.leizhanchina.com/wp-content/themes/leizhanchina/images/index-en_09.jpg" alt="Zhengzhou Leizhan Machine"></a>
-                <div class="search">
-                  <form action="http://www.leizhanchina.com/google-custom-search" method="get" name="frmsearch" id="frmsearch">
-                          <label><input type="hidden" name="cx" value="007027674981923064640:crfx14xd58k"></label>
-                          <label><input type="hidden" name="cof" value="FORID:11"></label>
-                          <label><input type="hidden" name="ie" value="UTF-8"></label>
-                          <label><input type="hidden" name="sitesearch" value="www.leizhanchina.com"></label>
-                          <label><input name="q" type="text" id="keyword" value="Search" class="sl" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue"></label>
-                          <label><input name="submit" type="submit" id="button" value="" class="sr"></label>
-                          <div class="clear"></div>
-                  </form>
-                  <div class="hs">Hot Search:<a href="http://www.leizhanchina.com/paper-machine/" class="fontshrink">Paper Machine</a>,<a href="http://www.leizhanchina.com/pulper/zdsd-series-d-type-hydrapulper/" class="fontshrink">Hydrapulper</a>,<a href="http://www.leizhanchina.com/pulper/zg-series-drum-pulper/" class="fontshrink">Drum Pulper</a>,<a href="http://www.leizhanchina.com/screening/zns-series-mid-consistency-pressure-screen/" class="fontshrink">Pressure Screen</a></div>
-                </div>
-                <script>
-                  $(function(){
-                  //alert('1');	
-                  $('#header .navlist ul').css('display','none');
-                  $('#header .menu').click(function(){
-                      $(this).hide();
-                      $('#header .navlist ul').toggle(1000);
-                  });
-                  $('#header .close').click(function(){
-                      $('.menu').show();
-                      $('#header .navlist ul').toggle(1000);
-                  });	
-                  });
-                </script>
-                <div class="navlist">
-                    <div class="menu">Menu</div>
-                <div class="close">Closed</div>
-                    <ul style="display: none;">
-                      <li><a href="http://www.leizhanchina.com">Home</a></li>
-                      <li><a href="http://www.leizhanchina.com/paper-machine/">PAPER MACHINE</a></li>
-                      <li><a href="http://www.leizhanchina.com/pulp-machine/">PULP MACHINE</a></li>
-                      <li><a href="http://www.leizhanchina.com/solution/">SOLUTION</a></li>
-                      <li><a href="http://www.leizhanchina.com/case/">CASE</a></li>
-                      <li><a href="http://www.leizhanchina.com/delivery/">Delivery</a></li>
-                      <li><a href="http://www.leizhanchina.com/faq/">FAQ</a></li>
-                      <li><a href="http://www.leizhanchina.com/contact-us/inquiry">INQUIRY</a></li>
-                      <li><a href="http://www.leizhanchina.com/about-us/">ABOUT</a></li>
-                      <li><a href="http://www.leizhanchina.com/contact-us/">CONTACT</a></li>
-                      <li><a href="http://www.leizhanchina.com/about-us/service">Service</a></li>
-                    </ul>
-                </div>
-              </div>
-              <div class="clear"></div>
-          </div>
-          <div class="hr">
-            <p><a href="" onclick="openZoosUrl('chatwin');" target="_blank" title="chat online">[ 24Hours Online ]</a></p>
-          </div>
-          <div class="clear"></div>
-        </div>
-      </div>
-
-      <div id="menu">
-        <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
-        <ul id="nav">
-          <li class="spa"></li>
-      
-            <li class="long"><a href="http://www.leizhanchina.com/paper-machine/">PAPER MACHINE</a></li>
-            <li class="long"><a href="http://www.leizhanchina.com/pulp-machine/">PULP MACHINE</a>
-                <ul>
-                    <li><a href="http://www.leizhanchina.com/pulper/">Pulper Equipment</a></li>
-                    <li><a href="http://www.leizhanchina.com/screening/">Screening Equipment</a></li>
-                    <li><a href="http://www.leizhanchina.com/refiner/">Refiner Equipment</a></li>
-                    <li><a href="http://www.leizhanchina.com/cleaner/">Cleaner Equipment</a></li>
-                    <li><a href="http://www.leizhanchina.com/conveyor-agitator/">Conveyor &amp; Agitator</a></li>
-                    <li><a href="http://www.leizhanchina.com/thickener/">Thickener Equipment</a></li>
-                </ul>
-            </li>
-            <li class="short"><a href="http://www.leizhanchina.com/solution/">SOLUTION</a>
-              <ul>
-                  <li><a href="http://www.leizhanchina.com/tissue-paper-making-line/">Tissue Paper Making Line</a></li>
-                  <li><a href="http://www.leizhanchina.com/kraft-liner-paper-making-line/">Kraft Liner Paper Making Line</a></li>
-                  <li><a href="http://www.leizhanchina.com/cultural-paper-making-line/">Cultural Paper Making Line</a></li>
-                  <li><a href="http://www.leizhanchina.com/coating-board-paper-making-line/">Coating Board Paper Making</a></li>
-                  <li><a href="http://www.leizhanchina.com/solution/corrugated-paper-making-line/">Corrugated Paper Making</a></li>
-                </ul>
-            </li>
-            <li class="short"><a href="http://www.leizhanchina.com/case/">CASE</a>
-              <ul>
-                    <li><a href="http://www.leizhanchina.com/tissue-paper-making-line-case/">Tissue Paper Making Line</a></li>
-                    <li><a href="http://www.leizhanchina.com/kraft-liner-paper-making-line-case/">Kraft Liner Paper Making Line</a></li>
-                    <li><a href="http://www.leizhanchina.com/cultural-paper-making-line-case/">Culture Paper Making Line</a></li>
-                    <li><a href="http://www.leizhanchina.com/coating-board-paper-making-line-case/">Coating Board Paper Making</a></li>
-                    <li><a href="http://www.leizhanchina.com/corrugated-paper-making-line-case/">Corrugated Paper Making</a></li>
-                </ul>
-            </li>
-            <li class="short"><a href="http://www.leizhanchina.com/delivery/">DELIVERY</a></li>
-            <li class="short"><a href="http://www.leizhanchina.com/faq/">FAQ</a>
-              <ul>
-                    <li><a href="http://www.leizhanchina.com/tissue-paper-making-line-faq/">Tissue Paper Making Line</a></li>
-                    <li><a href="http://www.leizhanchina.com/kraft-liner-paper-making-line-faq/">Kraft Liner Paper Making Line</a></li>
-                    <li><a href="http://www.leizhanchina.com/cultural-paper-making-line-faq/">Cultural Paper Making Line</a></li>
-                    <li><a href="http://www.leizhanchina.com/coating-board-paper-making-line-faq/">Coating Board Paper Making</a></li>
-                    <li><a href="http://www.leizhanchina.com/corrugated-paper-making-line-faq/">Corrugated Paper Making</a></li>
-                </ul>
-            </li>
-            <li class="short"><a href="http://www.leizhanchina.com/contact-us/inquiry">INQUIRY</a></li>
-            <li class="short"><a href="http://www.leizhanchina.com/about-us/">ABOUT US</a>
-              <ul>
-                  <li class=""><a href="http://www.leizhanchina.com/about-us/company-profile">Company Profile</a></li>
-                  <li><a href="http://www.leizhanchina.com/about-us/impression">Leizhan Impression</a></li>
-                  <li><a href="http://www.leizhanchina.com/about-us/culture">Leizhan Culture</a></li>
-                  <li><a href="http://www.leizhanchina.com/about-us/client">Production Market</a></li>
-                  <li><a href="http://www.leizhanchina.com/about-us/technology">Leizhan Technology</a></li>
-                  <li><a href="http://www.leizhanchina.com/about-us/honors">Leizhan Honors</a></li>
-                  <li><a href="http://www.leizhanchina.com/about-us/service">Leizhan Service</a></li>
-                  <li><a href="http://www.leizhanchina.com/news/">Leizhan News</a></li>
-                </ul>
-            </li>
-            <li class="short"><a href="http://www.leizhanchina.com/contact-us">CONTACT</a>
-              <ul>
-                    <li><a href="http://www.leizhanchina.com/contact-us/location">Our Location</a></li>
-                    <li><a href="http://www.leizhanchina.com/contact-us/feedback">Feedback</a></li>
-                    <li><a href="http://www.leizhanchina.com/contact-us/inquiry">Inquiry</a></li>
-                    <li><a href="http://www.leizhanchina.com/contact-us/parts-order">Spare Parts Order</a></li>
-                    <li><a href="http://www.leizhanchina.com/contact-us/sales-map">Sales Map</a></li>
-                    <li><a href="http://www.leizhanchina.com/contact-us/after-sale">After Sale Service</a></li>
-                </ul>
-            </li>
-        </ul>
-        <div class="clear"></div>
-      </div>
+		
+      <?php get_template_part("template_parts/top"); ?>
       <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/banner.js"></script>
       
       <style>
@@ -168,10 +41,10 @@ get_header();
       <div id="banner">
         <div class="slides">
           <ul class="slide-pic">
-              <li class="cur" style="display: block;"><a href="http://www.leizhanchina.com/pulp-machine/"><img alt="paper pulp equipment" src="http://www.leizhanchina.com/wp-content/themes/leizhanchina/images/banner1.jpg"></a></li>
-              <li class="" style="display: none;"><a href="http://www.leizhanchina.com/about-us/"><img alt="About Leizhan" src="http://www.leizhanchina.com/wp-content/themes/leizhanchina/images/banner7.jpg"></a></li>
-              <li class="" style="display: none;"><a href="http://www.leizhanchina.com/screening/"><img alt="Screening Equipment" src="http://www.leizhanchina.com/wp-content/themes/leizhanchina/images/banner6.jpg"></a></li>
-              <li class="" style="display: none;"><a href="http://www.leizhanchina.com/corrugated-paper-making-line/"><img alt="" src="http://www.leizhanchina.com/wp-content/themes/leizhanchina/images/banner4.jpg"></a></li>
+              <li class="cur" style="display: block;"><a href="http://www.hengdapapermachine.com/pulp-machine/"><img alt="paper pulp equipment" src="<?php echo get_theme_file_uri(); ?>/images/banner1.jpg"></a></li>
+              <li class="" style="display: none;"><a href="http://www.hengdapapermachine.com/about-us/"><img alt="About Leizhan" src="<?php echo get_theme_file_uri(); ?>/images/banner7.jpg"></a></li>
+              <li class="" style="display: none;"><a href="http://www.hengdapapermachine.com/screening/"><img alt="Screening Equipment" src="<?php echo get_theme_file_uri(); ?>/images/banner6.jpg"></a></li>
+              <li class="" style="display: none;"><a href="http://www.hengdapapermachine.com/corrugated-paper-making-line/"><img alt="" src="<?php echo get_theme_file_uri(); ?>/images/banner4.jpg"></a></li>
           </ul>
           <ul class="slide-li op">
               <li class="cur"></li>
@@ -187,11 +60,75 @@ get_header();
           </ul>
         </div>
       </div>
-      <ul class="padding-top:500px">  
-          <?php while (have_posts()) : the_post(); ?>  
-          <li><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></li>  
-          <?php endwhile;?>  
-      </ul>  
+      
+      <div id="m-warp">
+        <div class="middle">
+              <div class="m-n">
+                  <div class="title">LATEST NEWS</div>
+                  
+                  <div class="top-n">         	
+                                      <a href="http://www.hengdapapermachine.com/industry-news/leizhan-attend-iran-pack-print-show/" style="line-height:16px;"><img src="http://www.hengdapapermachine.com/wp-content/uploads/2018/12/Leizhan-Attend-Iran-Pack-Print-Show-.jpg" alt=""></a>
+                      <div class="top-text">
+                          <p><a href="http://www.hengdapapermachine.com/industry-news/leizhan-attend-iran-pack-print-show/" title="Leizhan Attend Iran Pack &amp; Print Show" style="line-height:16px;">Leizhan Attend Iran Pack &amp; Print Show</a></p>
+                          <div class="date">
+                              <font>Dec.04</font>
+                              <span>2018</span>
+                              <div class="clear"></div>
+                          </div>
+                          <div class="clear"></div>
+                      </div>
+                          
+                      <div class="clear"></div>
+                  </div>
+                  <ul>
+                                      <li>
+                          <span><font size="+1">Aug.28</font><br>2019</span>
+                          <p><a href="http://www.hengdapapermachine.com/company-news/2019-envirpro-paper-exhibition-in-indonesia/" title="2019 Envirpro Paper Exhibition In Indonesia">2019 Envirpro Paper Exhibition In Indonesia</a>
+                          <!--<br /><font color="d00000">Hits:</font> <script src="/plus/count/js.asp?id=270" language="javascript"></script>--></p>
+                      </li>
+                              <li>
+                          <span><font size="+1">Apr.11</font><br>2019</span>
+                          <p><a href="http://www.hengdapapermachine.com/company-news/4th-papertech-expo-2019-dhakabangladesh/" title="4th PaperTech Expo 2019 Dhaka,Bangladesh">4th PaperTech Expo 2019 Dhaka,Bangladesh</a>
+                          <!--<br /><font color="d00000">Hits:</font> <script src="/plus/count/js.asp?id=270" language="javascript"></script>--></p>
+                      </li>
+                          </ul>
+                  <div class="clear"></div>
+              </div>
+              <div class="m-a">
+                  <div class="title">SOLUTION</div>
+                  <div class="m-app">
+                      <div class="app"><a href="http://www.hengdapapermachine.com/kraft-liner-paper-making-line/"><img src="<?php echo get_theme_file_uri(); ?>/images/index-en_25.jpg"></a><p><a href="http://www.hengdapapermachine.com/kraft-liner-paper-making-line/">Kraft Paper</a></p></div>
+                      <div class="app"><a href="http://www.hengdapapermachine.com/coating-board-paper-making-line/"><img src="<?php echo get_theme_file_uri(); ?>/images/index-en_27.jpg"></a><p><a href="http://www.hengdapapermachine.com/coating-board-paper-making-line/">Coating Board Paper</a></p></div>
+                      <div class="app" style="margin-right:0;"><a href="http://www.hengdapapermachine.com/corrugated-paper-making-line/"><img src="<?php echo get_theme_file_uri(); ?>/images/index-en_29.jpg"></a><p><a href="http://www.hengdapapermachine.com/corrugated-paper-making-line/">Corrugated Paper</a></p></div>
+                      <div class="clear"></div>
+                  </div>
+                  <div class="m-about">
+                      <div class="title" style=" margin-bottom:10px;">FAQ</div>
+                      <p>FAQ is mainly about Living Paper Making Line, Kraft/Testliner Paper Making Line, High-grade Cultural Paper Making Line, Fluting/Corrugated Paper Making Line, Coating Board Paper Making Line...</p>
+                      <p><i><a href="http://www.hengdapapermachine.com/faq/" class="more">read more</a></i></p>
+                  </div>
+                  <div class="clear"></div>
+              </div>
+              <div class="m-r">
+                  <div class="m-p">
+                      <div class="title">SUCCESSFUL CASE</div>
+                      <p>A great many plants designed by Leizhan are built in countries and lots of them have become the classical ones in local market.</p>
+                      <p><i><a href="http://www.hengdapapermachine.com/case/" class="more">read more</a></i></p>
+                      <div class="clear"></div>
+                  </div>
+                  
+                  <div class="m-s">
+                      <ul>
+                          <li><span>Service</span><a href="http://www.hengdapapermachine.com/contact-us/parts-order" target="_blank" rel="nofollow">Parts</a> | <a href="http://www.hengdapapermachine.com/contact-us/after-sale" target="_blank" rel="nofollow">After-sale</a> | <a href="" onclick="openZoosUrl('chatwin');" title="chat online for free" target="_blank" rel="nofollow" style="color:#d00000;">Live Chat</a></li>
+                          <li><span>Hotline</span><font style="color:#d00000;">+86-371-5512 9198</font></li>
+                          <li><span>E-mail</span><a href="mailto:zzhengdachina@gmail.com">zzhengdachina@gmail.com</a></li>
+                      </ul>
+                  </div>
+                  <div class="clear"></div>
+              </div>
+              <div class="clear"></div>
+          </div>
+      </div>
 		</div><!-- .site-main -->
 
 <?php
