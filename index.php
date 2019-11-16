@@ -42,7 +42,7 @@ get_header();
         <div class="slides">
           <ul class="slide-pic">
               <li class="cur" style="display: block;"><a href="http://www.hengdapapermachine.com/pulp-machine/"><img alt="paper pulp equipment" src="<?php echo get_theme_file_uri(); ?>/images/banner1.jpg"></a></li>
-              <li class="" style="display: none;"><a href="http://www.hengdapapermachine.com/about-us/"><img alt="About Leizhan" src="<?php echo get_theme_file_uri(); ?>/images/banner7.jpg"></a></li>
+              <li class="" style="display: none;"><a href="http://www.hengdapapermachine.com/about-us/"><img alt="About Hengda" src="<?php echo get_theme_file_uri(); ?>/images/banner7.jpg"></a></li>
               <li class="" style="display: none;"><a href="http://www.hengdapapermachine.com/screening/"><img alt="Screening Equipment" src="<?php echo get_theme_file_uri(); ?>/images/banner6.jpg"></a></li>
               <li class="" style="display: none;"><a href="http://www.hengdapapermachine.com/corrugated-paper-making-line/"><img alt="" src="<?php echo get_theme_file_uri(); ?>/images/banner4.jpg"></a></li>
           </ul>
@@ -67,9 +67,9 @@ get_header();
                   <div class="title">LATEST NEWS</div>
                   
                   <div class="top-n">         	
-                                      <a href="http://www.hengdapapermachine.com/industry-news/leizhan-attend-iran-pack-print-show/" style="line-height:16px;"><img src="http://www.hengdapapermachine.com/wp-content/uploads/2018/12/Leizhan-Attend-Iran-Pack-Print-Show-.jpg" alt=""></a>
+                                      <a href="http://www.hengdapapermachine.com/industry-news/leizhan-attend-iran-pack-print-show/" style="line-height:16px;"><img src="http://www.hengdapapermachine.com/wp-content/uploads/2018/12/Hengda-Attend-Iran-Pack-Print-Show-.jpg" alt=""></a>
                       <div class="top-text">
-                          <p><a href="http://www.hengdapapermachine.com/industry-news/leizhan-attend-iran-pack-print-show/" title="Leizhan Attend Iran Pack &amp; Print Show" style="line-height:16px;">Leizhan Attend Iran Pack &amp; Print Show</a></p>
+                          <p><a href="http://www.hengdapapermachine.com/industry-news/leizhan-attend-iran-pack-print-show/" title="Hengda Attend Iran Pack &amp; Print Show" style="line-height:16px;">Hengda Attend Iran Pack &amp; Print Show</a></p>
                           <div class="date">
                               <font>Dec.04</font>
                               <span>2018</span>
@@ -112,7 +112,7 @@ get_header();
               <div class="m-r">
                   <div class="m-p">
                       <div class="title">SUCCESSFUL CASE</div>
-                      <p>A great many plants designed by Leizhan are built in countries and lots of them have become the classical ones in local market.</p>
+                      <p>A great many plants designed by Hengda are built in countries and lots of them have become the classical ones in local market.</p>
                       <p><i><a href="http://www.hengdapapermachine.com/case/" class="more">read more</a></i></p>
                       <div class="clear"></div>
                   </div>

@@ -1,7 +1,6 @@
 <?php
   get_header(); 
  ?>
-
 <style>
 .hd-post h1 {
   font-size: 18px !important;
@@ -25,7 +24,6 @@
   <img src="<?php echo z_taxonomy_image_url($cat[0]->term_id); ?>" alt="<?php echo single_cat_title();?>">
 </div>
  
-
  <div id="m-warp" class="hd-post">
 	<div class="s-middle">
         <div class="s-left" id="conLeft" style="height: 1060px;">

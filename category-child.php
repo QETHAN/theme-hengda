@@ -3,7 +3,6 @@
   <?php $cat = get_the_category(); ?>
   <img src="<?php echo z_taxonomy_image_url($queriedObj->category_parent); ?>" alt="<?php echo single_cat_title();?>">
 </div>
-
  <div id="m-warp">
 	<div class="s-middle">
     	<div class="s-left" id="conLeft">
@@ -53,10 +52,12 @@
                       </div>
                       <div class="clear"></div>
                     </div>
+                    <?php  wp_pagenavi(); ?>
+                    <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
                   <?php endwhile; ?>
                 <?php endif; ?>
-                <?php  wp_pagenavi(); ?>
-                <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
+                
+                
                 <!-- <p class="wp-pagenavi">
                   <span class="pages">Page Links: </span>
                   <span class="current">1</span>

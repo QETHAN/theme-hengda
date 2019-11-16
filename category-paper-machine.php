@@ -1,3 +1,10 @@
+<?php
+  get_header(); 
+ ?>
+ <style>
+ </style>
+ 
+ <?php get_template_part("template_parts/top"); ?> 
 <?php $queriedObject = get_queried_object(); ?>
 <div id="s-banner">
   <img src="<?php if (function_exists('z_taxonomy_image_url')) echo z_taxonomy_image_url(); ?>" alt="<?php echo single_cat_title();?>">
@@ -8,9 +15,11 @@
         	<ul>
               <?php $args = "child_of=" . $queriedObject->cat_ID . "&orderby=ID"; ?>
               <?php $categories = get_categories($args); ?>
-              <?php foreach($categories as $cat): ?>
-                <li><a href="<?php echo get_category_link($cat->cat_ID); ?>" class="arrow"><?php echo $cat->name; ?></a></li>
-              <?php endforeach; ?>
+              <?php if(have_posts()): ?>
+                <?php while(have_posts()): the_post(); ?>
+                  <li><a href="<?php the_permalink(); ?>" class="arrow"><?php the_title(); ?></a></li>
+                <?php endwhile; ?>
+              <?php endif; ?>
             <li class="conLeftLast"> </li>
           </ul>
           <div class="clear"></div>
@@ -36,23 +45,30 @@
                 </p>
               </div>
               <div class="mainBox">
-                <?php foreach($categories as $cat): ?>
+                <?php if(have_posts()): ?>
+                  <?php while(have_posts()): the_post(); ?>
                     <div class="eachBox">
                       <div class="eachImg">
-                        <a href="<?php echo get_category_link($cat->cat_ID); ?>" title="<?php echo $cat->name; ?>">
-                          <img src="<?php echo z_taxonomy_image_url($cat->term_id); ?>">
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                          <?php the_post_thumbnail(array(106, 78)); ?>
                         </a>
                       </div>
                       <div class="eachText">
-                        <h2><a href="<?php echo get_category_link($cat->cat_ID); ?>"><?php echo $cat->name; ?></a></h2>
-                        <p><?php echo $cat->category_description; ?></p>
-                        <p><i><a href="<?php echo get_category_link($cat->cat_ID); ?>" class="more">read more</a></i></p>
+                        <h2><a href="<?php the_permalink();; ?>"><?php echo the_title(); ?></a></h2>
+                        <p><?php the_excerpt(); ?></p>
+                        <p><i><a href="<?php the_permalink(); ?>" class="more">read more</a></i></p>
                       </div>
                       <div class="clear"></div>
                     </div>
-                  <?php endforeach; ?>
+                    <?php the_posts_pagination(); ?>
+                    <?php wpjam_pagenavi(); ?>
+                    <?php echo wp_link_pages(); ?>
+                    <?php endwhile; ?>
+                    
+                  <?php endif; ?>
                 </div>
                 <div class="clear"></div>
+                <?php echo wpjam_pagenavi(); ?>
             </div>
 <div class="rightContact">
     <div class="contact-t">CONTACT US</div>
@@ -151,3 +167,5 @@
     </div>
     <div class="clear"></div>
 </div>
+
+<?php get_footer(); ?>

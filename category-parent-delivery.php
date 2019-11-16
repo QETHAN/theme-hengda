@@ -1,26 +1,31 @@
-<?php $queriedObject = get_queried_object(); ?>
+<?php $queriedObj = get_queried_object(); ?>
 <div id="s-banner">
-  <img src="<?php if (function_exists('z_taxonomy_image_url')) echo z_taxonomy_image_url(); ?>" alt="<?php echo single_cat_title();?>">
+  <?php $cat = get_the_category(); ?>
+  <img src="<?php echo z_taxonomy_image_url($queriedObj->category_parent); ?>" alt="<?php echo single_cat_title();?>">
 </div>
+
  <div id="m-warp">
 	<div class="s-middle">
-    	<div class="s-left" id="conLeft">
+  <div class="s-left" id="conLeft" style="height: 1149px;">
         	<ul>
-              <?php $args = "child_of=" . $queriedObject->cat_ID . "&orderby=ID"; ?>
-              <?php $categories = get_categories($args); ?>
-              <?php foreach($categories as $cat): ?>
-                <li><a href="<?php echo get_category_link($cat->cat_ID); ?>" class="arrow"><?php echo $cat->name; ?></a></li>
-              <?php endforeach; ?>
-            <li class="conLeftLast"> </li>
-          </ul>
-          <div class="clear"></div>
+            	<li>Latest Case</li>
+                <li class="second  lis_cur">
+                	<ul>
+                    <?php query_posts('cat=16&posts_per_page=10'); while(have_posts()): the_post(); ?>   
+                      <li><a href="<?php the_permalink(); ?>" target="_blank"><?php the_title();?></a></li>   
+                    <?php endwhile; wp_reset_query(); ?>
+                  </ul>
+                </li>
+                <li class="conLeftLast"> </li>
+            </ul>
+            <div class="clear"></div>
         </div>
         <div class="s-right" id="conRight">
         	<div class="rightTitle">
             <span class="guide">
-              <a href="<?php site_url(); ?>">Home</a> » <?php echo ucwords(strtolower($queriedObject->cat_name)); ?>
+              <a href="<?php site_url(); ?>">Home</a> » <a href="<?php echo get_category_link($queriedObj->category_parent); ?>"><?php echo ucwords(strtolower(get_cat_name($queriedObj->category_parent))); ?></a> » <?php echo ucwords(strtolower($queriedObj->cat_name)); ?>
             </span>
-            <h1><?php echo ucwords(strtolower($queriedObject->cat_name)); ?></h1>
+            <h1><?php echo ucwords(strtolower($queriedObj->cat_name)); ?></h1>
           </div>
             <!--[if lte IE 10]>
             <style>
@@ -30,30 +35,25 @@
             </head>
             <![endif]-->
             <div class="rightMain">
-            	<div class="rightTop">
-                <p>
-                  <?php echo category_description(); ?>
-                </p>
-              </div>
               <div class="mainBox">
-                <?php foreach($categories as $cat): ?>
-                    <div class="eachBox">
+                <?php if( have_posts() ): ?>
+                <?php while( have_posts() ): the_post(); ?>
+                  <div class="eachBox2">
                       <div class="eachImg">
-                        <a href="<?php echo get_category_link($cat->cat_ID); ?>" title="<?php echo $cat->name; ?>">
-                          <img src="<?php echo z_taxonomy_image_url($cat->term_id); ?>">
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                          <?php the_post_thumbnail(array(179, 78)); ?>
                         </a>
                       </div>
-                      <div class="eachText">
-                        <h2><a href="<?php echo get_category_link($cat->cat_ID); ?>"><?php echo $cat->name; ?></a></h2>
-                        <p><?php echo $cat->category_description; ?></p>
-                        <p><i><a href="<?php echo get_category_link($cat->cat_ID); ?>" class="more">read more</a></i></p>
-                      </div>
-                      <div class="clear"></div>
-                    </div>
-                  <?php endforeach; ?>
-                </div>
-                <div class="clear"></div>
-            </div>
+                      <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                  </div>
+                <?php endwhile; ?>
+              <?php endif; ?>
+            <div class="clear"></div>
+          </div>
+          <!--分页-->                    
+          <div class="page"><p class="wp-pagenavi"><span class="pages">Page Links: </span><span class="current">1</span><a href="http://www.leizhanchina.com/delivery/page/2/" class="page larger" rel="nofollow">2</a><a href="http://www.leizhanchina.com/delivery/page/2/" rel="nofollow">Next</a><a href="http://www.leizhanchina.com/delivery/page/2/" rel="nofollow">Last Page</a></p></div>
+          <div class="clear"></div>
+      </div>
 <div class="rightContact">
     <div class="contact-t">CONTACT US</div>
     <p>If you have any requirements or questions, please leave a message, we will reply you as soon as possible!</p>

@@ -1,60 +1,66 @@
-<?php $queriedObject = get_queried_object(); ?>
+<?php
+/*
+ * Template Name: Hengda Honors页面模板
+ * Template Post Type: post, page, product
+ */
+?>
+<?php
+  get_header(); 
+ ?>
+ <style>
+ </style>
+ 
+ <?php get_template_part("template_parts/top"); ?> 
+ <?php $queriedObj = get_queried_object(); ?>
+ 
 <div id="s-banner">
-  <img src="<?php if (function_exists('z_taxonomy_image_url')) echo z_taxonomy_image_url(); ?>" alt="<?php echo single_cat_title();?>">
+  <?php $cats = get_the_category(); ?>
+  <img src="<?php echo z_taxonomy_image_url($cats[0]->cat_ID); ?>" alt="<?php echo single_cat_title();?>">
 </div>
- <div id="m-warp">
+<div id="m-warp">
 	<div class="s-middle">
     	<div class="s-left" id="conLeft">
-        	<ul>
-              <?php $args = "child_of=" . $queriedObject->cat_ID . "&orderby=ID"; ?>
-              <?php $categories = get_categories($args); ?>
-              <?php foreach($categories as $cat): ?>
-                <li><a href="<?php echo get_category_link($cat->cat_ID); ?>" class="arrow"><?php echo $cat->name; ?></a></li>
-              <?php endforeach; ?>
-            <li class="conLeftLast"> </li>
-          </ul>
-          <div class="clear"></div>
-        </div>
-        <div class="s-right" id="conRight">
-        	<div class="rightTitle">
-            <span class="guide">
-              <a href="<?php site_url(); ?>">Home</a> » <?php echo ucwords(strtolower($queriedObject->cat_name)); ?>
-            </span>
-            <h1><?php echo ucwords(strtolower($queriedObject->cat_name)); ?></h1>
-          </div>
-            <!--[if lte IE 10]>
-            <style>
-            #m-warp .s-middle .s-right .rightMain{ width:72%;}
-            #m-warp .s-middle .s-right .rightContact{ width:26%; }
-            </style>
-            </head>
-            <![endif]-->
-            <div class="rightMain">
-            	<div class="rightTop">
-                <p>
-                  <?php echo category_description(); ?>
-                </p>
-              </div>
-              <div class="mainBox">
-                <?php foreach($categories as $cat): ?>
-                    <div class="eachBox">
-                      <div class="eachImg">
-                        <a href="<?php echo get_category_link($cat->cat_ID); ?>" title="<?php echo $cat->name; ?>">
-                          <img src="<?php echo z_taxonomy_image_url($cat->term_id); ?>">
-                        </a>
-                      </div>
-                      <div class="eachText">
-                        <h2><a href="<?php echo get_category_link($cat->cat_ID); ?>"><?php echo $cat->name; ?></a></h2>
-                        <p><?php echo $cat->category_description; ?></p>
-                        <p><i><a href="<?php echo get_category_link($cat->cat_ID); ?>" class="more">read more</a></i></p>
-                      </div>
-                      <div class="clear"></div>
+      <?php get_template_part( "template_parts/about-nav-sider" ); ?>
+    <div class="clear"></div>
+</div>        <div class="s-right" id="conRight">
+        	<div class="rightTitle"><span class="guide"><a href="<?php site_url(); ?>">Home</a> » <a href="<?php echo get_category_link($cats[0]->cat_ID); ?>">About Us</a> » Hengda Honors </span><h1>Hengda Honors</h1></div>
+          <div class="rightMain">
+                <div class="about-info2">
+                   <!-- 内容开始 -->
+                    <div class="rightTop">Hengda products employs advanced technology, pass ISO9001:2008 International Quality System Certification and BVCertificate and many patents.</div>
+                    <div class="about-rongyu4">
+                        <p>On Dec.27-30, Hengda attended the 21th Int’l. Exhibition of Pack &amp; Print Machinery  at Tehran, Iran.<br>
+                        On October.22-24, Hengda attended PAPER-ME 2014 Exhibition at Cairo International Center in Egypt.<br>
+                        During July.30-August.1, Hengda attended the 11th International Pulp &amp; Paper Industry Expo-China in Guangzhou, China.<br>
+                        &nbsp;</p>
                     </div>
-                  <?php endforeach; ?>
+                    <div class="about-rongyu3">
+                        <p>On October.17, Hengda obtained CQC-ISO9001:2008 GB/T19001-2008 Certification of Quality Management System.<br>
+                        On Sep.23-25, Hengda attented the CIPTE 2013-China International  Paper Technology Exhibition and Conference at Beijing, China.<br>
+                        On August.21-23, Hengda attended the 10th International Pulp &amp; Paper Industry Expo-China in Guangzhou, China.<br>
+                        On June.6-8, Hengda attened the Vietnam paper 2013.<br>
+                        In June.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hengda obtained Rotary Drum Type Rotor of Mid Consistency Pressure Screen patent certificate.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hengda obtained Inflow Perssure Screen Rotor Adjusting Structure patent certificate.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hengda obtained High Density Cleaner  patent certificate.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hengda obtained Slag Tank of High Density Cleaner  patent certificate.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hengda obtained Inner Cone of High Density Cleaner patent certicate.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hengda obtained Fiber Separator patent certificate.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hengda obtained Cutter of Fiber Separator patent certicate.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hengda obtained Agitator patent certificate.<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hengda obtained Sieve Plate of Hydrapulper patent certificate.<br>
+                        On March.18-20, Hengda participated the Shandong (International) Technique and Equipment Exhibition of Pulp &amp; Paper Industry.<br>
+                        On March.13-15, Hengda participated in the 2nd Western China (Chengdu) Pulp and Paper Technology and Equipment, Paper, Tissue trade fair.<br>
+                        On Feb.1, Hengda obtained BV Certification.<br>
+                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </div>
+
+                    <!-- 内容结束 -->
+                    <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
             </div>
-<div class="rightContact">
+            <div class="rightContact">
     <div class="contact-t">CONTACT US</div>
     <p>If you have any requirements or questions, please leave a message, we will reply you as soon as possible!</p>
     <script type="text/javascript">
@@ -73,8 +79,8 @@
 				return false;
 		}
 		</script>
-<form method="post" action="http://www.hengdapapermachine.com/mail/leizhan/" onsubmit="return chkInquiry()" name="msgForm" target="msgFrame">
-    <input type="hidden" name="pWin" id="pWin" value="http://www.hengdapapermachine.com/paper-machine/">
+<form method="post" action="http://www.leizhanchina.com/mail/leizhan/" onsubmit="return chkInquiry()" name="msgForm" target="msgFrame">
+    <input type="hidden" name="pWin" id="pWin" value="http://www.leizhanchina.com/about-us/service/">
     <input type="hidden" name="Act" value="Inquiry">
     <input type="hidden" name="iLang" value="en">
     <table border="0" cellspacing="0" cellpadding="0" width="90%">
@@ -143,7 +149,7 @@
         
         </script>
         <![endif]-->     <div class="c-1"><a href="" onclick="openZoosUrl('chatwin');" target="_blank" rel="nofollow" style="color:#d00000;" title="chat online">Service Online</a></div>
-    <div class="c-2">+86-371-5512 9198</div>
+    <div class="c-2">+86-371-69277066</div>
     <div class="c-3"><a href="mailto:zzhengdachina@gmail.com">zzhengdachina@gmail.com</a></div>
 </div>            <div class="clear"></div>
         </div>
@@ -151,3 +157,5 @@
     </div>
     <div class="clear"></div>
 </div>
+
+<?php get_footer(); ?>

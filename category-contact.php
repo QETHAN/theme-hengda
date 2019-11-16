@@ -26,20 +26,20 @@
   <div class="rightTitle"><span class="guide"><a href="http://www.hengdapapermachine.com">Home</a> »  Contact </span><h1>Contact Us</h1></div>
       
       <div class="about-info" style=" padding-bottom:20px; border-bottom:1px dashed #dcdcdc;">
-        <div style="width:220px; float:right; clear:right; height:230px;"><img src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/contant2.jpg" alt="Contact Us"></div>
+        <div style="width:220px; float:right; clear:right; height:230px;"><img src="<?php echo get_theme_file_uri(); ?>/images/contant2.jpg" alt="Contact Us"></div>
         <p>Hengda can offer customers complete paper pulp equipment service with rich experience. We are aiming at building a world brand in paper making &amp; pulping field with professional skill and positive innovation spirit. </p>
           
         <p>If you are interested in our products, welcome to our company, you can also consult via telephone or email. We will offer you product details and working knowledge. You will not only get high quality equipment with competitive price but also intimate service.</p>
         <p>&nbsp;</p>
-        <p><strong>Sales Hotline：+86-371-5512 9198</strong></p>
+        <p><strong>Sales Hotline: +86-371-69277066</strong></p>
         <p>For live chat, <a href="" onclick="openZoosUrl('chatwin');" target="_blank" rel="nofollow" title="chat online"><strong>Please click for online service</strong></a>.</p>
       </div>
       <div class="about-info" style="border-top:1px dashed #dcdcdc; margin-top:2px;">
           <p><strong>Zhengzhou Hengda Technology Paper Machinery Co., LTD.</strong><br>
-          Tel.: +86-371-5512 9198 +86-13783579051<br>
-        Fax: +86-371-86138029<br>
+          Tel.:  +86-371-69277066  +86-19903719817<br>
+          Fax: +86-371-69277066<br>
           Email: <a href="mailto:zzhengdachina@gmail.com">zzhengdachina@gmail.com</a> <br>
-          Office Add: Hetun Industrial Area, Dawei Town, Xinmi City, Henan Province ,China<br>
+          Office Add: Wulibao Industrial Area, Dawei Town, Xinmi City, Henan Province ,China<br>
           Postcode: 452383<br></p>
           <p><strong>Mail To Us</strong><br>&nbsp;</p>
       <script type="text/javascript">
@@ -135,3 +135,4 @@
   </div>
   <div class="clear"></div>
 </div>
+<?php get_footer(); ?>

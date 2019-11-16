@@ -1,60 +1,52 @@
-<?php $queriedObject = get_queried_object(); ?>
+<?php
+/*
+ * Template Name: Company Profile页面模板
+ * Template Post Type: post, page, product
+ */
+?>
+<?php
+  get_header(); 
+ ?>
+ <style>
+ </style>
+ 
+ <?php get_template_part("template_parts/top"); ?> 
+ <?php $queriedObj = get_queried_object(); ?>
+ 
 <div id="s-banner">
-  <img src="<?php if (function_exists('z_taxonomy_image_url')) echo z_taxonomy_image_url(); ?>" alt="<?php echo single_cat_title();?>">
+  <?php $cats = get_the_category(); ?>
+  <img src="<?php echo z_taxonomy_image_url($cats[0]->cat_ID); ?>" alt="<?php echo single_cat_title();?>">
 </div>
- <div id="m-warp">
+<div id="m-warp">
 	<div class="s-middle">
     	<div class="s-left" id="conLeft">
-        	<ul>
-              <?php $args = "child_of=" . $queriedObject->cat_ID . "&orderby=ID"; ?>
-              <?php $categories = get_categories($args); ?>
-              <?php foreach($categories as $cat): ?>
-                <li><a href="<?php echo get_category_link($cat->cat_ID); ?>" class="arrow"><?php echo $cat->name; ?></a></li>
-              <?php endforeach; ?>
-            <li class="conLeftLast"> </li>
-          </ul>
-          <div class="clear"></div>
-        </div>
-        <div class="s-right" id="conRight">
-        	<div class="rightTitle">
-            <span class="guide">
-              <a href="<?php site_url(); ?>">Home</a> » <?php echo ucwords(strtolower($queriedObject->cat_name)); ?>
-            </span>
-            <h1><?php echo ucwords(strtolower($queriedObject->cat_name)); ?></h1>
-          </div>
-            <!--[if lte IE 10]>
-            <style>
-            #m-warp .s-middle .s-right .rightMain{ width:72%;}
-            #m-warp .s-middle .s-right .rightContact{ width:26%; }
-            </style>
-            </head>
-            <![endif]-->
-            <div class="rightMain">
-            	<div class="rightTop">
-                <p>
-                  <?php echo category_description(); ?>
-                </p>
-              </div>
-              <div class="mainBox">
-                <?php foreach($categories as $cat): ?>
-                    <div class="eachBox">
-                      <div class="eachImg">
-                        <a href="<?php echo get_category_link($cat->cat_ID); ?>" title="<?php echo $cat->name; ?>">
-                          <img src="<?php echo z_taxonomy_image_url($cat->term_id); ?>">
-                        </a>
-                      </div>
-                      <div class="eachText">
-                        <h2><a href="<?php echo get_category_link($cat->cat_ID); ?>"><?php echo $cat->name; ?></a></h2>
-                        <p><?php echo $cat->category_description; ?></p>
-                        <p><i><a href="<?php echo get_category_link($cat->cat_ID); ?>" class="more">read more</a></i></p>
-                      </div>
-                      <div class="clear"></div>
-                    </div>
-                  <?php endforeach; ?>
-                </div>
-                <div class="clear"></div>
-            </div>
-<div class="rightContact">
+      <?php get_template_part( "template_parts/about-nav-sider" ); ?>
+    <div class="clear"></div>
+</div>        <div class="s-right" id="conRight">
+        	<div class="rightTitle"><span class="guide"><a href="<?php site_url(); ?>">Home</a> » <a href="<?php echo get_category_link($cats[0]->cat_ID); ?>">About Us</a> » Company Profile </span><h1>Company Profile</h1></div>
+          <div class="rightMain">
+                <div class="about-info2">
+                   <!-- 内容开始 -->
+                    <div class="rightTop">Zhengzhou Hengda Technology Paper Machinery Co., Ltd. is one of the leading and professional paper pulp equipment manufacturer in China.</div>
+                    <div class="about-right"><img onload="size(this)" alt="Hengda Profile" src="<?php echo get_theme_file_uri(); ?>/images/about2_03.jpg"></div>
+                    <p>Zhengzhou Hengda Technology Paper Machinery Co., LTD. (Formerly Hongda Papermaking Machine Construction Company) is founded in the year 1980. 
+                      It is a manufacturer specializing in making complete sets of waste paper pulp equipment which combines research and development with producing and sales.</p>
+                    <p>This company has processing and testing equipment like CNC cutting machine, sand blasting system, 
+                      vertical and horizontal CNC lathe, planer milling machine, vertical boring machine, automatic continuous welding machine, 
+                      CNC bending machine, CNC shearing machine, veneer reeling machine, 1200 tons of press machine, 
+                      high speed dynamic balance correction machine, assembly test table etc. With sophisticated processing machinery and professional technical personnel, 
+                      this company can produce super waste paper pulping equipment.</p>
+                    <p>The main series of the products are waste paper delivery, waste paper bale breaking and screening, 
+                      waste paper pulping, heavy slag cleaning, screening, deinking, concentration, heat dispersion, 
+                      pulping, mixing and pulp conveying etc. This company provides customers high efficiency and practical pulp making production line with low carbon environmental protection thought.
+                       At present, their products have been sold to more than twenty provinces, cities and autonomous regions in domestic region and exported to Vietnam, 
+                       Israel, Malaysia, Indonesia, Cambodia and other countries.</p>
+                    <p><strong>Customers mean everything! Everything we do, we do it for your benefit!</strong></p>
+                                    <!-- 内容结束 -->
+                    <div class="clear"></div>
+            	</div>
+			</div>
+            <div class="rightContact">
     <div class="contact-t">CONTACT US</div>
     <p>If you have any requirements or questions, please leave a message, we will reply you as soon as possible!</p>
     <script type="text/javascript">
@@ -73,8 +65,8 @@
 				return false;
 		}
 		</script>
-<form method="post" action="http://www.hengdapapermachine.com/mail/leizhan/" onsubmit="return chkInquiry()" name="msgForm" target="msgFrame">
-    <input type="hidden" name="pWin" id="pWin" value="http://www.hengdapapermachine.com/paper-machine/">
+<form method="post" action="http://www.leizhanchina.com/mail/leizhan/" onsubmit="return chkInquiry()" name="msgForm" target="msgFrame">
+    <input type="hidden" name="pWin" id="pWin" value="http://www.leizhanchina.com/about-us/service/">
     <input type="hidden" name="Act" value="Inquiry">
     <input type="hidden" name="iLang" value="en">
     <table border="0" cellspacing="0" cellpadding="0" width="90%">
@@ -143,7 +135,7 @@
         
         </script>
         <![endif]-->     <div class="c-1"><a href="" onclick="openZoosUrl('chatwin');" target="_blank" rel="nofollow" style="color:#d00000;" title="chat online">Service Online</a></div>
-    <div class="c-2">+86-371-5512 9198</div>
+    <div class="c-2">+86-371-69277066</div>
     <div class="c-3"><a href="mailto:zzhengdachina@gmail.com">zzhengdachina@gmail.com</a></div>
 </div>            <div class="clear"></div>
         </div>
@@ -151,3 +143,5 @@
     </div>
     <div class="clear"></div>
 </div>
+
+<?php get_footer(); ?>

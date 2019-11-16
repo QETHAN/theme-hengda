@@ -41,8 +41,8 @@ get_header();
     </div>
     
     <div class="about-info">
-          <p class="aboutinfo">Leizhan company professional engaged in the research, development and manufacture of the complete sets of waste paper pulp and paper production equipment for over decades of years. Leizhan are commited to establish a world brand in paper and pulp industry with professional skill and positive innovation spirit.</p>
-          <p>By taking science and technology as the guide, good product quality as assurance, with the sincere service at your back, Leizhan provide high quality and low price complete sets of pulp and paper production equipment to our customers. Moreover, Leizhan provide the perfect  pre-sale and after-sale service for the customer from factory design to producing line design, installation, commissioning and training. </p>
+          <p class="aboutinfo">Hengda company professional engaged in the research, development and manufacture of the complete sets of waste paper pulp and paper production equipment for over decades of years. Hengda are commited to establish a world brand in paper and pulp industry with professional skill and positive innovation spirit.</p>
+          <p>By taking science and technology as the guide, good product quality as assurance, with the sincere service at your back, Hengda provide high quality and low price complete sets of pulp and paper production equipment to our customers. Moreover, Hengda provide the perfect  pre-sale and after-sale service for the customer from factory design to producing line design, installation, commissioning and training. </p>
           <p>Thanks to the superior quality products and perfect services, our products has a huge market at home and aboard.</p>
           <p>Domestic service network includes: Xinjiang, Shanxi, Shannxi, Hebei, Henan, Hunan,  Anhui, Hubei, Liaoning, Jilin, Heilongjiang, Shandong, Guizhou, Sichuan, Yunnan, Jiangsu, Fujian, Jiangxi, Guangdong, etc. </p>
           <p style="text-align: center"><img alt="Sales map" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/contant6.jpg"></p>
@@ -52,7 +52,7 @@ get_header();
           <div style="width: 220px; float: right; height: 230px; clear: right"><img alt="Contact us" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/contant2.jpg"></div>
           <p>If you are interested in our products, welcome to our company or our local offices, you can also consult via telephone or email. We will offer you product details and working knowledge. You will not only get high quality equipment with competitive price but also intimate service.</p>
           <p>&nbsp;</p>
-          <p><strong>Sales Hotline: +86-371-5512 9198</strong></p>
+          <p><strong>Sales Hotline: +86-371-69277066</strong></p>
           <p>If you want to contact us for free immediately: please click <a rel="nofollow" target="_blank" href="" onclick="openZoosUrl('chatwin');" title="chat online"><strong>Free online service</strong></a>.</p>	
         <div class="clear"></div>
     <div class="clear"></div>

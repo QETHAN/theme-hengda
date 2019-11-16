@@ -98,4 +98,24 @@
         set_post_thumbnail_size( 106, 78, true );
     }
     add_action('after_setup_theme', 'hengda_support_thumbnail');
+
+    function wpjam_pagenavi(){
+        global $wp_query;   
+    
+        $big = 999999999; // need an unlikely integer
+    
+        $pagination = array(
+            'base' => str_replace( $big, '%#%', get_pagenum_link( $big ) ),
+            'format' => '',
+            'total' => $wp_query->max_num_pages,
+            'current' => max( 1, get_query_var('paged') ),
+            'prev_text' => __('«'),
+            'next_text' => __('»')
+        );
+    
+        echo '
+    
+    <div class="pagenavi">'.paginate_links($pagination).'</div>
+    ';
+    }
 ?>

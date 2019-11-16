@@ -51,14 +51,14 @@
         <div class="clear"></div>
     </div>
     <div class="hr">
-      <p><a href="" onclick="openZoosUrl('chatwin');" target="_blank" title="chat online">[ 24Hours Online ]</a></p>
+      <p></p>
     </div>
     <div class="clear"></div>
   </div>
 </div>
 
 <div id="menu">
-  <script type="text/javascript" src="<?php echo get_theme_file_uri(); ?>/js/menu.js"></script>
+  <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/menu.js"></script>
   <?php 
     wp_nav_menu(array(
       // 调取和哪个位置关联菜单下的项目

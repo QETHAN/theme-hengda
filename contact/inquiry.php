@@ -41,7 +41,7 @@ get_header();
     </div>
     
     <div class="about-info">
-                <p class="aboutinfo">Zhengzhou Leizhan can offer customers complete paper pulp equipment service with rich experience. We are aiming at building a world brand in paper making &amp; pulping field with professional skill and positive innovation spirit.</p>
+                <p class="aboutinfo">Zhengzhou Hengda can offer customers complete paper pulp equipment service with rich experience. We are aiming at building a world brand in paper making &amp; pulping field with professional skill and positive innovation spirit.</p>
                 <p>&nbsp;</p>
 				<script type="text/javascript">
 	function $g(obj){return document.getElementById(obj);}
@@ -127,14 +127,14 @@ for(i=0;i<input.length;i++){
 
 </script>
 <![endif]-->                 
-  <p><img onload="size(this)" alt="Inquiry" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/contant3.jpg"></p>
-                <div style="height: 230px; width: 220px; float: right; clear: right"><img onload="size(this)" alt="Contact" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/contant2.jpg"></div>
+  <p><img onload="size(this)" alt="Inquiry" src="<?php echo get_theme_file_uri(); ?>/images/contant3.jpg"></p>
+                <div style="height: 230px; width: 220px; float: right; clear: right"><img alt="Contact" src="<?php echo get_theme_file_uri(); ?>/images/contant2.jpg"></div>
                 <p>If you are interested in our products, welcome to our company or our local offices, you can also consult via telephone or email. We will offer you product details and working knowledge. You will not only get high quality equipment with competitive price but also intimate service.</p>
                 <p>&nbsp;</p>
-                <p><strong>Sales Hotline: +86-371-5512 9198</strong></p>
-                <p>If you want to contact us for free immediately: please click <a rel="nofollow" target="_blank" onclick="openZoosUrl('chatwin');" href="" title="chat online"><strong>Free online service</strong></a>.</p>	
+                <p><strong>Sales Hotline: +86-371-69277066</strong></p>
+                <!-- <p>If you want to contact us for free immediately: please click <a rel="nofollow" target="_blank" onclick="openZoosUrl('chatwin');" href="" title="chat online"><strong>Free online service</strong></a>.</p>	
                     <div class="clear"></div>
-                </div>
+                </div> -->
     <div class="clear"></div>
   </div>
   <div class="clear"></div>
