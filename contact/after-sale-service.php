@@ -13,7 +13,7 @@ get_header();
 <div class="s-middle">
     <div class="s-left" id="conLeft" style="height: 1060px;">
   <ul>
-      <li><a href="http://www.hengdapapermachine.com/contact-us">Contact Us</a></li>
+      <li><a href="<?php echo home_url(); ?>/contact-us">Contact Us</a></li>
       <?php $posts = get_posts( "category=39&numberposts=10&order=asc" ); ?>  
       <?php if( $posts ) : ?>  
         <ul><?php foreach( $posts as $post ) : setup_postdata( $post ); ?>  
@@ -30,7 +30,7 @@ get_header();
 <div class="s-right" id="conRight">
     <div class="rightTitle">
         <span class="guide">
-        <a href="http://www.hengdapapermachine.com">Home</a> » <?php
+        <a href="<?php echo home_url(); ?>">Home</a> » <?php
         $get_cat        = get_the_category();
         $first_cat      = $get_cat[0];
         $category_name  = $first_cat->cat_name;
@@ -54,7 +54,7 @@ get_header();
                     7. Providing life-long maintenance service;<br>
                     8. Providing technical exchanging.</p>
                     
-                    <p>After-sale Service Tel.: <font style="font-size: 14px; color: #f00">+86-371-5512 9198</font><br>
+                    <p>After-sale Service Tel.: <font style="font-size: 14px; color: #f00">+86-371-69277066</font><br>
                     After-sale Service Email: <font style="font-size: 14px; color: #f00">zzhengdachina@gmail.com</font></p> 
                     
                     <p><strong>Mail To Us</strong><br>&nbsp;</p>
@@ -74,8 +74,8 @@ get_header();
 			return false;
 	}
 </script>
-<form method="post" action="http://www.hengdapapermachine.com/mail/leizhan/" onsubmit="return chkInquiry()" name="msgForm" target="msgFrame">
-        <input type="hidden" name="pWin" id="pWin" value="http://www.hengdapapermachine.com/contact-us/after-sale/">
+<form method="post" action="<?php echo home_url(); ?>/mail/leizhan/" onsubmit="return chkInquiry()" name="msgForm" target="msgFrame">
+        <input type="hidden" name="pWin" id="pWin" value="<?php echo home_url(); ?>/contact-us/after-sale/">
         <input type="hidden" name="Act" value="Inquiry">
         <input type="hidden" name="iLang" value="en">
         <table cellspacing="0" cellpadding="0" width="450" border="0">

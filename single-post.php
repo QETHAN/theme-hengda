@@ -44,7 +44,7 @@
             <div class="s-right" id="conRight">
               <div class="rightTitle">
                 <span class="guide">
-                  <a href="<?php site_url(); ?>">Home</a> » <a href="<?php echo get_category_link(get_the_category()[0]->cat_ID); ?>"><?php echo ucwords(strtolower(get_the_category()[0]->cat_name)); ?></a> »  <?php the_title();?> 
+                  <a href="<?php echo home_url(); ?>">Home</a> » <a href="<?php echo get_category_link(get_the_category()[0]->cat_ID); ?>"><?php echo ucwords(strtolower(get_the_category()[0]->cat_name)); ?></a> »  <?php the_title();?> 
                 </span>
                   <h1><?php the_title(); ?></h1>
                 </div>

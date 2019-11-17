@@ -1,4 +1,5 @@
 <?php 
+   $months = array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec");
     // 自定义函数
     function hengda_register_nav() {
         register_nav_menus(array(
@@ -118,4 +119,5 @@
     <div class="pagenavi">'.paginate_links($pagination).'</div>
     ';
     }
+
 ?>

@@ -23,7 +23,7 @@
       <?php get_template_part( "template_parts/about-nav-sider" ); ?>
     <div class="clear"></div>
 </div>        <div class="s-right" id="conRight">
-        	<div class="rightTitle"><span class="guide"><a href="<?php site_url(); ?>">Home</a> » <a href="<?php echo get_category_link($cats[0]->cat_ID); ?>">About Us</a> » Hengda Impression </span><h1>Hengda Impression</h1></div>
+        	<div class="rightTitle"><span class="guide"><a href="<?php echo home_url(); ?>">Home</a> » <a href="<?php echo get_category_link($cats[0]->cat_ID); ?>">About Us</a> » Hengda Impression </span><h1>Hengda Impression</h1></div>
           <div class="rightMain">
                 <div class="about-info2">
                         <div class="rightTop">Zhengzhou Hengda Technology Paper Machinery Co., Ltd. is located in Hetun Industrial Area, Dawei Town, Henan Provice, 50 km away from Zhengzhou city. Hengda is a professional manufacturer of pulp &amp; paper equipment, which engaged in research and development, manufacture and sale, over 200 staffs, including 50 engineers and technicians. Annual production and processing capacity is more than US$15000000.</div>
@@ -51,8 +51,8 @@
 				return false;
 		}
 		</script>
-<form method="post" action="http://www.leizhanchina.com/mail/leizhan/" onsubmit="return chkInquiry()" name="msgForm" target="msgFrame">
-    <input type="hidden" name="pWin" id="pWin" value="http://www.leizhanchina.com/about-us/service/">
+<form method="post" action="<?php echo home_url(); ?>/mail/leizhan/" onsubmit="return chkInquiry()" name="msgForm" target="msgFrame">
+    <input type="hidden" name="pWin" id="pWin" value="<?php echo home_url(); ?>/about-us/service/">
     <input type="hidden" name="Act" value="Inquiry">
     <input type="hidden" name="iLang" value="en">
     <table border="0" cellspacing="0" cellpadding="0" width="90%">
@@ -120,7 +120,8 @@
         }
         
         </script>
-        <![endif]-->     <div class="c-1"><a href="" onclick="openZoosUrl('chatwin');" target="_blank" rel="nofollow" style="color:#d00000;" title="chat online">Service Online</a></div>
+        <![endif]-->     
+        <!-- <div class="c-1"><a href="" onclick="openZoosUrl('chatwin');" target="_blank" rel="nofollow" style="color:#d00000;" title="chat online">Service Online</a></div> -->
     <div class="c-2">+86-371-69277066</div>
     <div class="c-3"><a href="mailto:zzhengdachina@gmail.com">zzhengdachina@gmail.com</a></div>
 </div>            <div class="clear"></div>

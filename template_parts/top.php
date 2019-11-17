@@ -3,9 +3,9 @@
   <div id="header">
     <div class="hl">
         <div class="logo">
-          <a href="<?php site_url(); ?>"><img src="<?php echo get_theme_file_uri(); ?>/images/logo.jpg" alt="Zhengzhou Hengda Paper Machine"></a>
-          <div class="search">
-            <form action="http://www.hengdapapermachine.com/google-custom-search" method="get" name="frmsearch" id="frmsearch">
+          <a href="<?php echo home_url(); ?>"><img src="<?php echo get_theme_file_uri(); ?>/images/logo.jpg" alt="Zhengzhou Hengda Paper Machine"></a>
+          <!-- <div class="search">
+            <form action="/google-custom-search" method="get" name="frmsearch" id="frmsearch">
                     <label><input type="hidden" name="cx" value="007027674981923064640:crfx14xd58k"></label>
                     <label><input type="hidden" name="cof" value="FORID:11"></label>
                     <label><input type="hidden" name="ie" value="UTF-8"></label>
@@ -14,8 +14,8 @@
                     <label><input name="submit" type="submit" id="button" value="" class="sr"></label>
                     <div class="clear"></div>
             </form>
-            <div class="hs">Hot Search:<a href="http://www.hengdapapermachine.com/paper-machine/" class="fontshrink">Paper Machine</a>,<a href="http://www.hengdapapermachine.com/pulper/zdsd-series-d-type-hydrapulper/" class="fontshrink">Hydrapulper</a>,<a href="http://www.hengdapapermachine.com/pulper/zg-series-drum-pulper/" class="fontshrink">Drum Pulper</a>,<a href="http://www.hengdapapermachine.com/screening/zns-series-mid-consistency-pressure-screen/" class="fontshrink">Pressure Screen</a></div>
-          </div>
+            <div class="hs">Hot Search:<a href="/paper-machine/" class="fontshrink">Paper Machine</a>,<a href="/pulper/zdsd-series-d-type-hydrapulper/" class="fontshrink">Hydrapulper</a>,<a href="/pulper/zg-series-drum-pulper/" class="fontshrink">Drum Pulper</a>,<a href="/screening/zns-series-mid-consistency-pressure-screen/" class="fontshrink">Pressure Screen</a></div>
+          </div> -->
           <script>
             $(function(){
             //alert('1');	
@@ -34,17 +34,17 @@
             <div class="menu">Menu</div>
             <div class="close">Closed</div>
                 <ul style="display: none;">
-                  <li><a href="http://www.hengdapapermachine.com">Home</a></li>
-                  <li><a href="http://www.hengdapapermachine.com/paper-machine/">PAPER MACHINE</a></li>
-                  <li><a href="http://www.hengdapapermachine.com/pulp-machine/">PULP MACHINE</a></li>
-                  <li><a href="http://www.hengdapapermachine.com/solution/">SOLUTION</a></li>
-                  <li><a href="http://www.hengdapapermachine.com/case/">CASE</a></li>
-                  <li><a href="http://www.hengdapapermachine.com/delivery/">Delivery</a></li>
-                  <li><a href="http://www.hengdapapermachine.com/faq/">FAQ</a></li>
-                  <li><a href="http://www.hengdapapermachine.com/contact-us/inquiry">INQUIRY</a></li>
-                  <li><a href="http://www.hengdapapermachine.com/about-us/">ABOUT</a></li>
-                  <li><a href="http://www.hengdapapermachine.com/contact-us/">CONTACT</a></li>
-                  <li><a href="http://www.hengdapapermachine.com/about-us/service">Service</a></li>
+                  <li><a href="<?php echo home_url(); ?>">Home</a></li>
+                  <li><a href="<?php echo home_url(); ?>/paper-machine/">PAPER MACHINE</a></li>
+                  <li><a href="<?php echo home_url(); ?>/pulp-machine/">PULP MACHINE</a></li>
+                  <li><a href="<?php echo home_url(); ?>/solution/">SOLUTION</a></li>
+                  <li><a href="<?php echo home_url(); ?>/case/">CASE</a></li>
+                  <li><a href="<?php echo home_url(); ?>/delivery/">Delivery</a></li>
+                  <li><a href="<?php echo home_url(); ?>/faq/">FAQ</a></li>
+                  <li><a href="<?php echo home_url(); ?>/contact-us/inquiry">INQUIRY</a></li>
+                  <li><a href="<?php echo home_url(); ?>/about-us/">ABOUT</a></li>
+                  <li><a href="<?php echo home_url(); ?>/contact-us/">CONTACT</a></li>
+                  <li><a href="<?php echo home_url(); ?>/about-us/service">Service</a></li>
                 </ul>
             </div>
           </div>
@@ -79,5 +79,4 @@
       'walker'    => new Nav_menu_walker()
     ));
   ?>
-  <div class="clear"></div>
 </div>

@@ -13,7 +13,7 @@ get_header();
 <div class="s-middle">
     <div class="s-left" id="conLeft" style="height: 1060px;">
   <ul>
-      <li><a href="http://www.hengdapapermachine.com/contact-us">Contact Us</a></li>
+      <li><a href="<?php echo home_url(); ?>/contact-us">Contact Us</a></li>
       <?php $posts = get_posts( "category=39&numberposts=10&order=asc" ); ?>  
       <?php if( $posts ) : ?>  
         <ul><?php foreach( $posts as $post ) : setup_postdata( $post ); ?>  
@@ -28,7 +28,7 @@ get_header();
  <div class="clear"></div>
 </div>        
 <div class="s-right" id="conRight">
-<div class="rightTitle"><span class="guide"><a href="http://www.hengdapapermachine.com">Home</a> » <?php
+<div class="rightTitle"><span class="guide"><a href="<?php echo home_url(); ?>">Home</a> » <?php
 $get_cat        = get_the_category();
 $first_cat      = $get_cat[0];
 $category_name  = $first_cat->cat_name;
@@ -38,7 +38,7 @@ $category_link  = get_category_link( $first_cat->cat_ID ); ?>
 <div class="about-info">
                 <p class="aboutinfo">Zhengzhou Hengda can offer customers complete paper pulp equipment service with rich experience. We are aiming at building a world brand in paper making &amp; pulping field with professional skill and positive innovation spirit.</p>
                 <p>If you have any requirements or questions, please leave a message, we will reply you as soon as possible!</p>
-                <p>You can call us directly:<font style="font-size: 14px; color: rgb(255,0,0)">+86-371-5512 9198</font>.</p>
+                <p>You can call us directly:<font style="font-size: 14px; color: rgb(255,0,0)">+86-371-69277066</font>.</p>
                 <p>&nbsp;</p>
                 <script type="text/javascript">
 	function $g(obj){return document.getElementById(obj);}
@@ -56,8 +56,8 @@ $category_link  = get_category_link( $first_cat->cat_ID ); ?>
 			return false;
 	}
 </script>
-<form method="post" action="http://www.hengdapapermachine.com/mail/leizhan/" onsubmit="return chkInquiry()" name="msgForm" target="msgFrame">
-        <input type="hidden" name="pWin" id="pWin" value="http://www.hengdapapermachine.com/contact-us/feedback/">
+<form method="post" action="<?php echo home_url(); ?>/mail/leizhan/" onsubmit="return chkInquiry()" name="msgForm" target="msgFrame">
+        <input type="hidden" name="pWin" id="pWin" value="<?php echo home_url(); ?>/contact-us/feedback/">
         <input type="hidden" name="Act" value="Inquiry">
         <input type="hidden" name="iLang" value="en">
         <table cellspacing="0" cellpadding="0" width="450" border="0">
@@ -124,8 +124,8 @@ $category_link  = get_category_link( $first_cat->cat_ID ); ?>
 
       </script>
       <![endif]-->                 
-        <p><img onload="size(this)" alt="Feedback" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/contant3.jpg"></p>
-        <div style="height: 230px; width: 220px; float: right; clear: right"><img onload="size(this)" alt="Contact" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/contant2.jpg"></div>
+        <p><img onload="size(this)" alt="Feedback" src="<?php echo home_url(); ?>/wp-content/themes/hengdapapermachine/images/contant3.jpg"></p>
+        <div style="height: 230px; width: 220px; float: right; clear: right"><img onload="size(this)" alt="Contact" src="<?php echo home_url(); ?>/wp-content/themes/hengdapapermachine/images/contant2.jpg"></div>
         <p>If you are interested in our products, welcome to our company or our local offices, you can also consult via telephone or email. We will offer you product details and working knowledge. You will not only get high quality equipment with competitive price but also intimate service.</p>
         <p>&nbsp;</p>
         <p><strong>Sales Hotline: +86-371-69277066</strong></p>

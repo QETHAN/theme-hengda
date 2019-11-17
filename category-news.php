@@ -10,7 +10,7 @@
 </div>
 <div id="m-warp">
   <div class="s-middle">
-				<div class="single-nav"><span class="guide"><a href="http://www.leizhanchina.com">Home</a> » <a></a><a href="http://www.leizhanchina.com/news/">News</a> » Hengda News </span><h1>Hengda News</h1></div>
+				<div class="single-nav"><span class="guide"><a href="<?php echo home_url(); ?>">Home</a> » <a></a><a href="<?php echo home_url(); ?>/news/">News</a> » Hengda News </span><h1>Hengda News</h1></div>
 				<div class="newslist">
                 	<ul>
                     <?php if (have_posts()): ?>
@@ -24,8 +24,9 @@
                         <?php endwhile; ?>
                     <?php endif; ?>
                     </ul>
-                    <!--分页-->                    
-                    <div class="page"><p class="wp-pagenavi"><span class="pages">Page Links: </span><span class="current">1</span><a href="http://www.leizhanchina.com/company-news/page/2/" class="page larger" rel="nofollow">2</a><a href="http://www.leizhanchina.com/company-news/page/3/" class="page larger" rel="nofollow">3</a><a href="http://www.leizhanchina.com/company-news/page/4/" class="page larger" rel="nofollow">4</a><a href="http://www.leizhanchina.com/company-news/page/5/" class="page larger" rel="nofollow">5</a><a href="http://www.leizhanchina.com/company-news/page/2/" rel="nofollow">Next</a><a href="http://www.leizhanchina.com/company-news/page/5/" rel="nofollow">Last Page</a></p></div>
+                    <!--分页-->    
+                    <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>                
+                    <!-- <div class="page"><p class="wp-pagenavi"><span class="pages">Page Links: </span><span class="current">1</span><a href="<?php echo home_url(); ?>/company-news/page/2/" class="page larger" rel="nofollow">2</a><a href="<?php echo home_url(); ?>/company-news/page/3/" class="page larger" rel="nofollow">3</a><a href="<?php echo home_url(); ?>/company-news/page/4/" class="page larger" rel="nofollow">4</a><a href="<?php echo home_url(); ?>/company-news/page/5/" class="page larger" rel="nofollow">5</a><a href="<?php echo home_url(); ?>/company-news/page/2/" rel="nofollow">Next</a><a href="<?php echo home_url(); ?>/company-news/page/5/" rel="nofollow">Last Page</a></p></div> -->
                 </div>
                 
                        

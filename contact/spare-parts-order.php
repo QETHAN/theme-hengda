@@ -13,7 +13,7 @@ get_header();
 <div class="s-middle">
     <div class="s-left" id="conLeft" style="height: 1060px;">
   <ul>
-      <li><a href="http://www.hengdapapermachine.com/contact-us">Contact Us</a></li>
+      <li><a href="<?php echo home_url(); ?>/contact-us">Contact Us</a></li>
       <?php $posts = get_posts( "category=39&numberposts=10&order=asc" ); ?>  
       <?php if( $posts ) : ?>  
         <ul><?php foreach( $posts as $post ) : setup_postdata( $post ); ?>  
@@ -30,7 +30,7 @@ get_header();
 <div class="s-right" id="conRight">
     <div class="rightTitle">
         <span class="guide">
-        <a href="http://www.hengdapapermachine.com">Home</a> » <?php
+        <a href="<?php echo home_url(); ?>">Home</a> » <?php
         $get_cat        = get_the_category();
         $first_cat      = $get_cat[0];
         $category_name  = $first_cat->cat_name;
@@ -41,7 +41,7 @@ get_header();
     </div>
     
     <div class="about-info">
-             <p class="aboutinfo">LEIZHAN can offer customers complete paper pulp equipment service with rich experience. We are aiming at building a world brand in paper making &amp; pulping field with professional skill and positive innovation spirit.</p>
+             <p class="aboutinfo">HENGDA can offer customers complete paper pulp equipment service with rich experience. We are aiming at building a world brand in paper making &amp; pulping field with professional skill and positive innovation spirit.</p>
             <p>&nbsp;</p>
             <script type="text/javascript">
 	function $g(obj){return document.getElementById(obj);}
@@ -59,8 +59,8 @@ get_header();
 			return false;
 	}
 </script>
-<form method="post" action="http://www.hengdapapermachine.com/mail/leizhan/" onsubmit="return chkInquiry()" name="msgForm" target="msgFrame">
-        <input type="hidden" name="pWin" id="pWin" value="http://www.hengdapapermachine.com/contact-us/parts-order/">
+<form method="post" action="<?php echo home_url(); ?>/mail/leizhan/" onsubmit="return chkInquiry()" name="msgForm" target="msgFrame">
+        <input type="hidden" name="pWin" id="pWin" value="<?php echo home_url(); ?>/contact-us/parts-order/">
         <input type="hidden" name="Act" value="Inquiry">
         <input type="hidden" name="iLang" value="en">
         <table cellspacing="0" cellpadding="0" width="450" border="0">
@@ -126,22 +126,22 @@ for(i=0;i<input.length;i++){
 }
 
 </script>
-<![endif]-->             <p><img alt="Parts service" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/contant3.jpg"></p>
+<![endif]-->             <p><img alt="Parts service" src="<?php echo home_url(); ?>/wp-content/themes/hengdapapermachine/images/contant3.jpg"></p>
             <div style="font-size: 14px; font-weight: 700;  line-height:40px; width: 720px">Accessories show</div>
             <div class="peijian" style="width: 720px">
                 <ul>
-                    <li><img alt="chain conveyor trough plate" title="chain conveyor trough plate" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/spare-parts/chain-conveyor-trough-plate.jpg"></li>
-                    <li><img alt="cutter" title="cutter" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/spare-parts/cutter.jpg"></li>
-                    <li><img alt="disc refiner plate" title="disc refiner plate" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/spare-parts/disc-refiner-plate.jpg"></li>
-                    <li><img alt="fiber separator screen plate" title="fiber separator screen plate" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/spare-parts/fiber-separator-screen-plate.jpg"></li>
-                    <li><img alt="hole screen basket" title="hole screen basket" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/spare-parts/hole-screen-basket.jpg"></li>
-                    <li><img alt="machanical seal" title="machanical seal" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/spare-parts/machanical-seal.jpg"></li>
-                    <li><img alt="machinical seal" title="machinical seal" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/spare-parts/machinical-seal-1.jpg"></li>
-                    <li><img alt="reject separator blade" title="reject separator blade" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/spare-parts/reject-separator-blade.jpg"></li>
-                    <li><img alt="rotor" title="rotor" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/spare-parts/rotor.jpg"></li>
-                    <li><img alt="scrapper" title="scrapper" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/spare-parts/scrapper.jpg"></li>
-                    <li><img alt="slot screen basket" title="slot screen basket" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/spare-parts/slot-screen-basket.jpg"></li>
-                    <li><img alt="felt" title="felt" src="http://www.hengdapapermachine.com/wp-content/themes/hengdapapermachine/images/spare-parts/felt.jpg"></li>
+                    <li><img alt="chain conveyor trough plate" title="chain conveyor trough plate" src="<?php echo home_url(); ?>/wp-content/themes/hengdapapermachine/images/spare-parts/chain-conveyor-trough-plate.jpg"></li>
+                    <li><img alt="cutter" title="cutter" src="<?php echo home_url(); ?>/wp-content/themes/hengdapapermachine/images/spare-parts/cutter.jpg"></li>
+                    <li><img alt="disc refiner plate" title="disc refiner plate" src="<?php echo home_url(); ?>/wp-content/themes/hengdapapermachine/images/spare-parts/disc-refiner-plate.jpg"></li>
+                    <li><img alt="fiber separator screen plate" title="fiber separator screen plate" src="<?php echo home_url(); ?>/wp-content/themes/hengdapapermachine/images/spare-parts/fiber-separator-screen-plate.jpg"></li>
+                    <li><img alt="hole screen basket" title="hole screen basket" src="<?php echo home_url(); ?>/wp-content/themes/hengdapapermachine/images/spare-parts/hole-screen-basket.jpg"></li>
+                    <li><img alt="machanical seal" title="machanical seal" src="<?php echo home_url(); ?>/wp-content/themes/hengdapapermachine/images/spare-parts/machanical-seal.jpg"></li>
+                    <li><img alt="machinical seal" title="machinical seal" src="<?php echo home_url(); ?>/wp-content/themes/hengdapapermachine/images/spare-parts/machinical-seal-1.jpg"></li>
+                    <li><img alt="reject separator blade" title="reject separator blade" src="<?php echo home_url(); ?>/wp-content/themes/hengdapapermachine/images/spare-parts/reject-separator-blade.jpg"></li>
+                    <li><img alt="rotor" title="rotor" src="<?php echo home_url(); ?>/wp-content/themes/hengdapapermachine/images/spare-parts/rotor.jpg"></li>
+                    <li><img alt="scrapper" title="scrapper" src="<?php echo home_url(); ?>/wp-content/themes/hengdapapermachine/images/spare-parts/scrapper.jpg"></li>
+                    <li><img alt="slot screen basket" title="slot screen basket" src="<?php echo home_url(); ?>/wp-content/themes/hengdapapermachine/images/spare-parts/slot-screen-basket.jpg"></li>
+                    <li><img alt="felt" title="felt" src="<?php echo home_url(); ?>/wp-content/themes/hengdapapermachine/images/spare-parts/felt.jpg"></li>
                 </ul>
             </div>
             

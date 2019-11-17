@@ -18,9 +18,9 @@
         <div class="s-right" id="conRight">
         	<div class="rightTitle">
             <span class="guide">
-              <a href="<?php site_url(); ?>">Home</a> » <?php echo ucwords(strtolower($queriedObject->cat_name)); ?>
+              <a href="<?php echo home_url(); ?>">Home</a> » <?php echo $queriedObject->cat_name == "FAQ" ? "FAQ" : ucwords(strtolower($queriedObject->cat_name)); ?>
             </span>
-            <h1><?php echo ucwords(strtolower($queriedObject->cat_name)); ?></h1>
+            <h1><?php echo $queriedObject->cat_name == "FAQ" ? "FAQ" : ucwords(strtolower($queriedObject->cat_name)); ?></h1>
           </div>
             <!--[if lte IE 10]>
             <style>
@@ -73,8 +73,8 @@
 				return false;
 		}
 		</script>
-<form method="post" action="http://www.hengdapapermachine.com/mail/leizhan/" onsubmit="return chkInquiry()" name="msgForm" target="msgFrame">
-    <input type="hidden" name="pWin" id="pWin" value="http://www.hengdapapermachine.com/paper-machine/">
+<form method="post" action="<?php echo home_url(); ?>/mail/leizhan/" onsubmit="return chkInquiry()" name="msgForm" target="msgFrame">
+    <input type="hidden" name="pWin" id="pWin" value="<?php echo home_url(); ?>/paper-machine/">
     <input type="hidden" name="Act" value="Inquiry">
     <input type="hidden" name="iLang" value="en">
     <table border="0" cellspacing="0" cellpadding="0" width="90%">
@@ -142,8 +142,9 @@
         }
         
         </script>
-        <![endif]-->     <div class="c-1"><a href="" onclick="openZoosUrl('chatwin');" target="_blank" rel="nofollow" style="color:#d00000;" title="chat online">Service Online</a></div>
-    <div class="c-2">+86-371-5512 9198</div>
+        <![endif]-->     
+        <!-- <div class="c-1"><a href="" onclick="openZoosUrl('chatwin');" target="_blank" rel="nofollow" style="color:#d00000;" title="chat online">Service Online</a></div> -->
+    <div class="c-2">+86-371-69277066</div>
     <div class="c-3"><a href="mailto:zzhengdachina@gmail.com">zzhengdachina@gmail.com</a></div>
 </div>            <div class="clear"></div>
         </div>

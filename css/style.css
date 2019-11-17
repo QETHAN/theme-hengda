@@ -205,6 +205,13 @@ body {
   padding: 0;
   z-index: 5000;
 }
+#nav:after {
+  display: table;
+  content: '';
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
 #nav li {
   background: url(../images/index-en_14.jpg) no-repeat right;
   float: left;

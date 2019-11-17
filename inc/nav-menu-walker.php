@@ -63,6 +63,13 @@ class Nav_menu_walker extends Walker_Nav_Menu {
     // //   $indent = str_repeat("\t", $depth);
     // //   $output .= "\n$indent<ul class=\"child-menu\">\n";
     // }
+
+    // public function end_lvl( &$output, $depth = 0, $args = array() ) {
+    //     $n = '\n';      // 原始碼跳行
+    //     $indent = '\t'; // 原始碼跳空格
+    
+    //     $output .= "$indent</ul>{$n}";
+    // }
 }
 
 ?>
